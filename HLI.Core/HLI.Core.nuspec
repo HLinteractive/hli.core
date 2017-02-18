@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>$id$</id>
+        <version>$version$</version>
+        <title>HLI.Core</title>
+        <authors>Thomas Hagström</authors>
+        <owners>HL Interactive</owners>
+        <licenseUrl>https://github.com/tomcrusader/HLI.Core/raw/master/LICENSE</licenseUrl>
+        <projectUrl>https://github.com/tomcrusader/HLI.Core</projectUrl>
+        <iconUrl>https://dl.dropboxusercontent.com/u/1027259/hliicon.ico</iconUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <description>Base Model for DDD / MVVM and other common classes. ModelBase supports change tracking, Guid/int Id, serialization etc.</description>
+        <summary>Common .Net (Portable) code is kept to provide base classes, extensions etc.</summary>
+        <releaseNotes>Manual build to fix dependencies</releaseNotes>
+        <copyright>Copyright © HL Interactive 2016 Stockholm Sweden</copyright>
+        <language>en-US</language>
+        <tags>mvvm, ddd, serialization, Audit, changetracking</tags>
+        <dependencies>
+            <group targetFramework=".NETPortable4.5-Profile111">
+                <dependency id="Newtonsoft.Json" version="9.0.1" />
+                <dependency id="System.Runtime.Serialization.Primitives" version="4.3.0" />
+            </group>
+            <group targetFramework=".NETStandard1.4">
+                <dependency id="Microsoft.CSharp" version="4.3.0" />
+                <dependency id="NETStandard.Library" version="1.6.1" />
+                <dependency id="System.Collections" version="4.3.0" />
+                <dependency id="System.ComponentModel" version="4.3.0" />
+                <dependency id="System.Diagnostics.Debug" version="4.3.0" />
+                <dependency id="System.Dynamic.Runtime" version="4.3.0" />
+                <dependency id="System.Globalization" version="4.3.0" />
+                <dependency id="System.IO" version="4.3.0" />
+                <dependency id="System.Linq" version="4.3.0" />
+                <dependency id="System.Linq.Expressions" version="4.3.0" />
+                <dependency id="System.ObjectModel" version="4.3.0" />
+                <dependency id="System.Reflection" version="4.3.0" />
+                <dependency id="System.Reflection.Extensions" version="4.3.0" />
+                <dependency id="System.Resources.ResourceManager" version="4.3.0" />
+                <dependency id="System.Runtime" version="4.3.0" />
+                <dependency id="System.Runtime.Extensions" version="4.3.0" />
+                <dependency id="System.Runtime.Numerics" version="4.3.0" />
+                <dependency id="System.Text.Encoding" version="4.3.0" />
+                <dependency id="System.Text.Encoding.Extensions" version="4.3.0" />
+                <dependency id="System.Text.RegularExpressions" version="4.3.0" />
+                <dependency id="System.Threading" version="4.3.0" />
+                <dependency id="System.Threading.Tasks" version="4.3.0" />
+                <dependency id="System.Xml.ReaderWriter" version="4.3.0" />
+                <dependency id="System.Xml.XDocument" version="4.3.0" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+      <!--<file src="lib\**" target="lib" />-->
+      <file src="..\ReadMe.md" target="" />
+        <file src="bin\$configuration$\HLI.Core.dll" target="lib\netstandard1.4\HLI.Core.dll" />
+        <file src="bin\$configuration$\HLI.Core.pdb" target="lib\netstandard1.4\HLI.Core.pdb" />
+        <file src="bin\$configuration$\HLI.Core.XML" target="lib\netstandard1.4\HLI.Core.XML" />
+        <file src="bin\$configuration$\HLI.Core.dll" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\HLI.Core.dll" />
+        <file src="bin\$configuration$\HLI.Core.pdb" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\HLI.Core.pdb" />
+        <file src="bin\$configuration$\HLI.Core.XML" target="lib\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10\HLI.Core.XML" />
+    </files>
+</package>

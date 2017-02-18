@@ -1,0 +1,111 @@
+﻿{
+  // CLI command: dotnet pack .\HLI.Core\ -c Release -o .\nuget\
+  "scripts": {
+    "postcompile": [
+      "dotnet pack --no-build --configuration %compile:Configuration%"
+    ]
+  },
+  // Replacement tokens not supported
+  "version": "1.0.5.2",
+  "name": "HLI.Core",
+  "title": "HLI.Core",
+  "description":
+    "Base Model for DDD / MVVM and other common classes. ModelBase supports change tracking, Guid/int Id, serialization etc.",
+  "language": "en-US",
+  "authors": [
+    "Thomas Hagström",
+    "HL interactive"
+  ],
+  "embedInteropTypes": true,
+  "testRunner": "NUnit",
+  "copyright": "Copyright © HL Interactive 2016 Stockholm Sweden",
+  "packOptions": {
+    "summary": "Base Model for DDD / MVVM and other common classes",
+    "releaseNotes": "Multi-target issues fixed",
+    "projectUrl": "https://github.com/tomcrusader/HLI.Core",
+    "tags": [
+      "mvvm",
+      "ddd",
+      "serialization",
+      "Audit",
+      "Model",
+      "changetracking"
+    ],
+    "licenseUrl": "https://github.com/tomcrusader/HLI.Core/raw/master/LICENSE",
+    "iconUrl": "https://dl.dropboxusercontent.com/u/1027259/hliicon.ico",
+    "requireLicenseAcceptance": true,
+    "repository": {
+      "type": "git",
+      "url": "git://github.com/tomcrusader/HLI.Core"
+    }
+  },
+  "runtimes": { "win10-x64": {} },
+  "frameworks": {
+    // Portable
+    ".NETPortable,Version=v4.5,Profile=Profile111": {
+      "buildOptions": {
+        "define": ["PORTABLE"],
+        "warningsAsErrors": false
+      },
+      "frameworkAssemblies": {
+        "Microsoft.CSharp": "",
+        "System.Collections": "",
+        "System": "",
+        "System.Core": "",
+        "System.ComponentModel": "",
+        "System.IO": "",
+        "System.Linq.Expressions": "",
+        "System.Numerics": "",
+        "System.Resources.ResourceManager": "",
+        "System.Runtime": "",
+        "System.Runtime.Extensions": "",
+        "System.Runtime.Serialization": "",
+        "System.Runtime.Serialization.Primitives": "",
+        "System.Xml": "",
+        "System.Xml.Linq": ""
+      },
+      "dependencies": {
+        "Newtonsoft.Json": {
+          "type": "build",
+          "version": "9.0.1"
+        }
+      }
+    },
+    //"netstandard1.4":
+    ".NETStandard,Version=v1.4": {
+      "imports": "portable-net45+win8+wpa81",
+      "buildOptions": {
+        "warningsAsErrors": false,
+        "define": [
+          "NETSTANDARD1_4",
+          "PORTABLE"
+        ]
+      },
+      "dependencies": {
+        "Microsoft.CSharp": {
+          "type": "build",
+          "version": "4.3.0"
+        },
+        "NETStandard.Library": {
+          "type": "build",
+          "version": "1.6.1"
+        },
+        "Newtonsoft.Json": "9.0.1",
+        "System.Runtime.Serialization.Primitives": "4.3.0",
+        "System.Collections": "4.3.0",
+        "System.ComponentModel": "4.3.0",
+        "System.Diagnostics.Debug": "4.3.0",
+        "System.Dynamic.Runtime": "4.3.0",
+        "System.Globalization": "4.3.0",
+        "System.IO": {
+          "type": "build",
+          "version": "4.3.0"
+        },
+        "System.Linq": {
+          "type": "build",
+          "version": "4.3.0"
+        }
+      }
+    }
+  }
+}
