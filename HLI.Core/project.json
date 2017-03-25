@@ -17,7 +17,8 @@
     "HL interactive"
   ],
   "embedInteropTypes": true,
-  "testRunner": "NUnit",
+  // Causes error:
+  //"testRunner": "NUnit",
   "copyright": "Copyright © HL Interactive 2016 Stockholm Sweden",
   "packOptions": {
     "summary": "Base Model for DDD / MVVM and other common classes",
@@ -39,7 +40,8 @@
       "url": "git://github.com/tomcrusader/HLI.Core"
     }
   },
-  "runtimes": { "win10-x64": {} },
+  // Only required if "testRunner" is set
+  //"runtimes": { "win10-x64": {} },
   "frameworks": {
     // Portable
     ".NETPortable,Version=v4.5,Profile=Profile111": {
