@@ -1,4 +1,4 @@
-![HL Interactive](https://dl.dropboxusercontent.com/u/1027259/HLi.Signature.DVDs.jpg)
+![HL Interactive](https://www.dropbox.com/s/fdyzvkso9zs9ndf/HLi.Signature.DVDs.jpg?dl=1)
 > HL Interactive (HLi) Source Code Readme
 > Copyright © HL Interactive 2015, Thomas Hagström,
 > Horisontvägen 85, Stockholm, Sweden
@@ -7,7 +7,7 @@
 HL Interactive core project where global .Net (Portable) code is kept to provide base classes, extensions etc.
 
 ## Purpose and Scope ##
-This project is ment to speed up product creation, avoid code clones and whenever possible provide a facade for common functionality
+This project contains a **[ModelBase](#modelbase)** class and other common C# code.
 
 ## Solution File Structure ##
 * **HLI.Core** - solution root directory
@@ -28,12 +28,12 @@ Download the nuget package through Package Manager Console:
 
 You can also clone the package on GitHub:
 
-* [https://github.com/tomcrusader/HLI.Core](https://github.com/tomcrusader/HLI.Core "HLI.Core on GitHub")
+* [https://github.com/HLinteractive/hli.core](https://github.com/HLinteractive/hli.core "HLI.Core on GitHub")
 
 ### Model Base ###
 For business objects / models; inherit one of the base classes:
 
-* **ModelBase** - inherits *AuditedObject* and implements change tracking, notification, filtering. This gives a complete model with little effort. Inherits all of the below.
+* <a name="modelbase"></a>**ModelBase** - inherits *AuditedObject* and implements change tracking, notification, filtering. This gives a complete model with little effort. Inherits all of the below.
 * **AuditedObject** - `IObjectWithAudit` implementation that inherits *EditableObject*. Provides base properties
 	* `Created:DateTime`
 	* `Updated:DateTime`
@@ -58,8 +58,8 @@ Other nifty code to keep you going:
 * **DateTimeSpan** - because it's missing from .Net
 
 # Deployment #
-Package for NuGet using the following command
+Package for NuGet by running `dotnet cli`. A post build task generates the package using `project.json`.
 
-    nuget pack ..\..\HLI.Core.csproj -Prop Configuration=Release -OutputDirectory ..\..\
+    nuget build HLI.Core
 
 Publish the generated .nupkg to NuGet official feed.

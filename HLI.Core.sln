@@ -7,6 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLI.Core", "HLI.Core\HLI.Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EE0192F3-5498-43CD-99BA-B920689D7761}"
 	ProjectSection(SolutionItems) = preProject
+		.gitginore = .gitginore
 		HLI.Core.sln.DotSettings = HLI.Core.sln.DotSettings
 		NuGet.config = NuGet.config
 		ReadMe.md = ReadMe.md
@@ -56,22 +57,5 @@ Global
 		{D797F376-5CB0-4E3D-B7D7-B9C14C77342C} = {D50547F1-965F-4BA3-A180-ABBCA766A637}
 		{B4D47A3C-C5F7-4992-9B54-7B0DACF1FE9D} = {D50547F1-965F-4BA3-A180-ABBCA766A637}
 		{05C3387A-B524-4E80-8C65-4C878F3843D5} = {27BD16D2-E501-4B01-90A1-193BED8AB3E7}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://nodessoft.visualstudio.com/
-		SccProjectUniqueName0 = HLI.Core\\HLI.Core.csproj
-		SccProjectTopLevelParentUniqueName0 = HLI.Core.sln
-		SccProjectName0 = HLI.Core
-		SccAuxPath0 = https://nodessoft.visualstudio.com
-		SccLocalPath0 = HLI.Core
-		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccProjectUniqueName1 = HLI.Core.Tests\\HLI.Core.Tests.csproj
-		SccProjectTopLevelParentUniqueName1 = HLI.Core.sln
-		SccProjectName1 = HLI.Core.Tests
-		SccAuxPath1 = https://nodessoft.visualstudio.com
-		SccLocalPath1 = HLI.Core.Tests
-		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 	EndGlobalSection
 EndGlobal

@@ -9,21 +9,20 @@
   "version": "1.0.5.2",
   "name": "HLI.Core",
   "title": "HLI.Core",
-  "description":
-    "Base Model for DDD / MVVM and other common classes. ModelBase supports change tracking, Guid/int Id, serialization etc.",
+  "description": "Base Model for DDD / MVVM and other common classes. ModelBase supports change tracking, Guid/int Id, serialization etc.",
   "language": "en-US",
   "authors": [
     "Thomas Hagström",
     "HL interactive"
   ],
   "embedInteropTypes": true,
-  // Causes error:
+  // Causes build error
   //"testRunner": "NUnit",
   "copyright": "Copyright © HL Interactive 2016 Stockholm Sweden",
   "packOptions": {
     "summary": "Base Model for DDD / MVVM and other common classes",
     "releaseNotes": "Multi-target issues fixed",
-    "projectUrl": "https://github.com/tomcrusader/HLI.Core",
+    "projectUrl": "https://github.com/HLinteractive/hli.core/",
     "tags": [
       "mvvm",
       "ddd",
@@ -32,16 +31,15 @@
       "Model",
       "changetracking"
     ],
-    "licenseUrl": "https://github.com/tomcrusader/HLI.Core/raw/master/LICENSE",
+    "licenseUrl": "https://github.com/HLinteractive/HLI.Core/raw/master/LICENSE",
     "iconUrl": "https://dl.dropboxusercontent.com/u/1027259/hliicon.ico",
     "requireLicenseAcceptance": true,
     "repository": {
       "type": "git",
-      "url": "git://github.com/tomcrusader/HLI.Core"
+      "url": "git://github.com/HLinteractive/HLI.Core"
     }
   },
-  // Only required if "testRunner" is set
-  //"runtimes": { "win10-x64": {} },
+  "supports": {},
   "frameworks": {
     // Portable
     ".NETPortable,Version=v4.5,Profile=Profile111": {
@@ -65,12 +63,6 @@
         "System.Runtime.Serialization.Primitives": "",
         "System.Xml": "",
         "System.Xml.Linq": ""
-      },
-      "dependencies": {
-        "Newtonsoft.Json": {
-          "type": "build",
-          "version": "9.0.1"
-        }
       }
     },
     //"netstandard1.4":
@@ -79,35 +71,24 @@
       "buildOptions": {
         "warningsAsErrors": false,
         "define": [
-          "NETSTANDARD1_4",
-          "PORTABLE"
+          "NETSTANDARD1_4"
         ]
       },
       "dependencies": {
-        "Microsoft.CSharp": {
-          "type": "build",
-          "version": "4.3.0"
-        },
-        "NETStandard.Library": {
-          "type": "build",
-          "version": "1.6.1"
-        },
-        "Newtonsoft.Json": "9.0.1",
+        "Microsoft.CSharp": "4.3.0",
+        "NETStandard.Library": "1.6.1",
         "System.Runtime.Serialization.Primitives": "4.3.0",
         "System.Collections": "4.3.0",
         "System.ComponentModel": "4.3.0",
         "System.Diagnostics.Debug": "4.3.0",
         "System.Dynamic.Runtime": "4.3.0",
         "System.Globalization": "4.3.0",
-        "System.IO": {
-          "type": "build",
-          "version": "4.3.0"
-        },
-        "System.Linq": {
-          "type": "build",
-          "version": "4.3.0"
-        }
+        "System.IO": "4.3.0",
+        "System.Linq": "4.3.0"
       }
     }
+  },
+  "dependencies": {
+    "Newtonsoft.Json": "9.0.1"
   }
 }
