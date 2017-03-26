@@ -6,7 +6,7 @@
     ]
   },
   // Replacement tokens not supported
-  "version": "1.0.5.2",
+  "version": "1.0.5.3",
   "name": "HLI.Core",
   "title": "HLI.Core",
   "description": "Base Model for DDD / MVVM and other common classes. ModelBase supports change tracking, Guid/int Id, serialization etc.",
