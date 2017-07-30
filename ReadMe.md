@@ -1,13 +1,23 @@
 ![HL Interactive](https://www.dropbox.com/s/fdyzvkso9zs9ndf/HLi.Signature.DVDs.jpg?dl=1)
-> HL Interactive (HLi) Source Code Readme
-> Copyright © HL Interactive 2015, Thomas Hagström,
-> Horisontvägen 85, Stockholm, Sweden
+> HL Interactive (HLi)
+
+- [<a name="hlicore"></a>HLI.Core](#-a-name--hlicore----a-hlicore)
+  * [Solution File Structure](#solution-file-structure)
+  * [<a name="usage"></a>Usage](#-a-name--usage----a-usage)
+    + [Installation](#installation)
+    + [Model Base](#model-base)
+    + [Extensions](#extensions)
+    + [Other](#other)
+- [Deployment](#deployment)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 # <a name="hlicore"></a>HLI.Core #
-HL Interactive core project where global .Net (Portable) code is kept to provide base classes, extensions etc.
+**[ModelBase](#modelbase)** class and other common C# code.
 
-## Purpose and Scope ##
-This project contains a **[ModelBase](#modelbase)** class and other common C# code.
+[![NuGet](https://img.shields.io/nuget/v/HLI.Core.svg)
+![Downloads](https://img.shields.io/nuget/dt/HLI.Core.svg)](https://preview.nuget.org/packages/HLI.Core/)
+![Build Status VSTS](https://nodessoft.visualstudio.com/_apis/public/build/definitions/a5db1571-dbc8-45df-9311-af2dd995677f/16/badge)
 
 ## Solution File Structure ##
 * **HLI.Core** - solution root directory
