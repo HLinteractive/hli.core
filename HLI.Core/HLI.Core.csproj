@@ -9,7 +9,7 @@
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <Description>Base Model for DDD / MVVM and other common classes. ModelBase supports change tracking, Guid/int Id, serialization etc.</Description>
     <Copyright>Copyright © HL Interactive 2017 Stockholm Sweden</Copyright>
-    <PackageReleaseNotes>Multi-target PCL / NetStandard 1.4 using VS2017 CsProj</PackageReleaseNotes>
+    <PackageReleaseNotes>Multi-target: net45, PCL, NetStandard 1.4, UAP10, using VS2017 CSPROJ</PackageReleaseNotes>
     <PackageIconUrl>https://dl.dropboxusercontent.com/u/1027259/hliicon.ico</PackageIconUrl>
     <RepositoryUrl>https://github.com/HLinteractive/hli.core.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -27,9 +27,9 @@
       changetracking
     </PackageTags>
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-    <Version>1.0.6-beta</Version>
+    <Version>1.0.6</Version>
     <GenerateDocumentationFile Condition=" '$(Configuration)' == 'Release' ">true</GenerateDocumentationFile>
-    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSymbols>false</IncludeSymbols>
   </PropertyGroup>
   <!-- NetStandard facade for PCL compatibility
   https://oren.codes/2017/01/04/multi-targeting-the-world-a-single-project-to-rule-them-all/#windows-example

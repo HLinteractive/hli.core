@@ -2,13 +2,15 @@
 > HL Interactive (HLi)
 
 - [<a name="hlicore"></a>HLI.Core](#-a-name--hlicore----a-hlicore)
-  * [Solution File Structure](#solution-file-structure)
   * [<a name="usage"></a>Usage](#-a-name--usage----a-usage)
     + [Installation](#installation)
     + [Model Base](#model-base)
     + [Extensions](#extensions)
     + [Other](#other)
-- [Deployment](#deployment)
+  * [Delivery & Deployment](#delivery---deployment)
+  * [Dependencies](#dependencies)
+    + [NuGet Package Generation](#nuget-package-generation)
+  * [Solution File Structure](#solution-file-structure)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -18,17 +20,6 @@
 [![NuGet](https://img.shields.io/nuget/v/HLI.Core.svg)
 ![Downloads](https://img.shields.io/nuget/dt/HLI.Core.svg)](https://preview.nuget.org/packages/HLI.Core/)
 ![Build Status VSTS](https://nodessoft.visualstudio.com/_apis/public/build/definitions/a5db1571-dbc8-45df-9311-af2dd995677f/16/badge)
-
-## Solution File Structure ##
-* **HLI.Core** - solution root directory
-	* **HLI.Core (Portable)** - main project
-		* **Extensions** - common extensions to .Net classes
-		* **Interfaces** - interfaces used by project
-			* **Models** - model interfaces
-			* **Repositories** - repository pattern interfaces
-		* **Models** - base models to simplify validation, serialization, change tracking etc.
-	* **HLI.Core.Tests** - unit tests (MS Test)
-		* **Mocks**
 
 ## <a name="usage"></a>Usage ##
 ### Installation ###
@@ -66,10 +57,29 @@ Common portable extensions to avoid code copy (i.e re-inventing the wheel).
 Other nifty code to keep you going:
 
 * **DateTimeSpan** - because it's missing from .Net
+## Delivery & Deployment
+Download the nuget package through Package Manager Console:
 
-# Deployment #
-Package for NuGet by running `dotnet cli`. A post build task generates the package using `project.json`.
+> install-package HLI.Forms.Core
 
-    nuget build HLI.Core
+## Dependencies
+* **Projects**
+* **Packages**
+	* Newtonsoft.Json
+* **Tools**
+	* Windows 8.1 SDK
+	* Windows 10 SDK
 
-Publish the generated .nupkg to NuGet official feed.
+### NuGet Package Generation
+The project is configured to automatically generate a ***.nupkg** upon build using Visual Studio 2017 CsProj MSBuild.
+
+## Solution File Structure ##
+* **HLI.Core** - solution root directory
+	* **HLI.Core (Portable)** - main project
+		* **Extensions** - common extensions to .Net classes
+		* **Interfaces** - interfaces used by project
+			* **Models** - model interfaces
+			* **Repositories** - repository pattern interfaces
+		* **Models** - base models to simplify validation, serialization, change tracking etc.
+	* **HLI.Core.Tests** - unit tests (MS Test)
+		* **Mocks**
